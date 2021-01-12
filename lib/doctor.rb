@@ -5,12 +5,12 @@ class Doctor
     @appointments = []
   end
   def new_appointment(appointment)
-    @appointments << appointment 
-    appointment.doctor = self 
-  end 
+    @appointments << appointment
+    appointment.doctor = self
+  end
   def appointments
-    @appointments 
-  end 
+    @appointments
+  end
   def patients
     self.appointments.collect {|appointment| appointment.patient}
   end
