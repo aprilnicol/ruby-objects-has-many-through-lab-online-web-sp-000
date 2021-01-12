@@ -19,3 +19,4 @@ end
     appointments.map {|appointment| appointment.patient}
   end
 end
+end 
